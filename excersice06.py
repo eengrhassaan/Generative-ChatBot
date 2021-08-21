@@ -1,22 +1,13 @@
 # Define a function which takes 2 numberic list as an input
 # and find the common element in the list
 
-numberList1 = [1,23,7]
-numberList2 = [2,4,1,6,12,22,23,12]
+convs_list = open('D:\Hassaan Bashir\Embedded C Course\FH Collaboration\cornell_movie_dialogs_corpus\cornell movie-dialogs corpus\movie_conversations.txt').read().split('\n')
 
-def findCommonNum(numberList1,numberList2):
-    newList = []
-    for item1 in numberList1:
-        # for item2 in numberList2:
-        #     if(item2 == item1):
-        #         newList.append(item2)
-        #         break
-        if item1 in numberList2:
-            newList.append(item1)
-    return newList
 
-print(findCommonNum(numberList1,numberList2))
-print("file edited")
-
-print("Testing Pull Requet")
-print("Testing pull request")
+conv_line_list = []
+_conv_list = []
+for conv_list in convs_list:
+    _conv_list = conv_list.split(' +++$+++ ')[-1].replace("'", "").replace(" ","")
+    print(_conv_list)
+    conv_line_list.append(_conv_list)
+    break
