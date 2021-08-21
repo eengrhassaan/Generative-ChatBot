@@ -5,9 +5,10 @@ convs_list = open('D:\Hassaan Bashir\Embedded C Course\FH Collaboration\cornell_
 
 
 conv_line_list = []
-_conv_list = []
+_conv_list = ""
 for conv_list in convs_list:
-    _conv_list = conv_list.split(' +++$+++ ')[-1].replace("'", "").replace(" ","")
-    print(_conv_list)
-    conv_line_list.append(_conv_list)
-    break
+    _conv_list = conv_list.split(' +++$+++ ')[-1].replace("'", "").replace(" ","").replace("[","").replace("]","")
+    conv_line_list.append(_conv_list.split(','))
+       
+
+conv_line_list[1:3]
