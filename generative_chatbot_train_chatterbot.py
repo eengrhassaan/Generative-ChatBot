@@ -29,7 +29,11 @@ chatbot_name = 'Jarvis'
 #     "You're welcome."
 # ]
 
-conversation =  my_function()
+# providing path of files to get in preprocessing function
+path_1 = 'D:\F-H_Collaboration\cornell movie-dialogs corpus\movie_conversations.txt'
+path_2 = 'D:\F-H_Collaboration\cornell movie-dialogs corpus\movie_lines.txt'
+
+conversation =  my_function(path_1,path_2)
 # --------------------------------------------------------------
 
 

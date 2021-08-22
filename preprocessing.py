@@ -9,8 +9,11 @@ file name : preprocessing.py
 # and find the common element in the list
 
 # ---------------- Reading file containing sentence ID's ----------------
-def my_function():
-    convs_list = open('D:\F-H_Collaboration\cornell movie-dialogs corpus\movie_conversations.txt').read().split('\n')
+# path_1 --> file that contains only conversation_ids
+# path_1 --> file that contains conversation_id with sentences
+
+def my_function(path_1,path_2):
+    convs_list = open(path_1).read().split('\n')
 
     conv_line_list = []
     _conv_list = ""
@@ -22,7 +25,7 @@ def my_function():
     conv_line_list[1:3]
     
     # ------ Reading file containing sentence ID's and sentences -------
-    dialog_lines_list = open('D:\F-H_Collaboration\cornell movie-dialogs corpus\movie_lines.txt').read().split('\n')
+    dialog_lines_list = open(path_2).read().split('\n')
     
     # Making two lists one for conversation ID's and other for  conversation 
     # Using both list in dictionariies in a way that ;
