@@ -67,6 +67,7 @@ trainer_chat_bot = ListTrainer(chat_bot)
 
 # ------------------------- Train ChatBot ----------------------
 for conv in conversation:
+    print(f'Conv iteration: {conversation.index(conv)}')
     trainer_chat_bot.train(conv)
 # --------------------------------------------------------------
 
