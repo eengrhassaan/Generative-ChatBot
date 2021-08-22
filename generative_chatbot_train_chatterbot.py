@@ -30,8 +30,14 @@ chatbot_name = 'Jarvis'
 # ]
 
 # providing path of files to get in preprocessing function
+# Farhan's DataSet Path
 path_1 = 'D:\F-H_Collaboration\cornell movie-dialogs corpus\movie_conversations.txt'
 path_2 = 'D:\F-H_Collaboration\cornell movie-dialogs corpus\movie_lines.txt'
+
+
+# Hassaan's DataSet Path
+path_1 = 'D:\Hassaan Bashir\Embedded C Course\FH Collaboration\cornell_movie_dialogs_corpus\cornell movie-dialogs corpus\movie_conversations.txt'
+path_2 = 'D:\Hassaan Bashir\Embedded C Course\FH Collaboration\cornell_movie_dialogs_corpus\cornell movie-dialogs corpus\movie_lines.txt'
 
 conversation =  my_function(path_1,path_2)
 # print (conversation)
@@ -60,7 +66,8 @@ trainer_chat_bot = ListTrainer(chat_bot)
 
 
 # ------------------------- Train ChatBot ----------------------
-trainer_chat_bot.train(conversation)
+for conv in conversation:
+    trainer_chat_bot.train(conv)
 # --------------------------------------------------------------
 
 
