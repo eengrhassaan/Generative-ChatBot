@@ -4,7 +4,7 @@ Created on Sat Aug 21 23:41:24 2021
 
 @author: Hassaan
 """
-
+from preprocessing import *
 # ---------------- Importing Required Libraries ----------------
 # Importing ChatBot Module from chatterbot library
 from chatterbot import ChatBot  
@@ -19,16 +19,17 @@ from chatterbot.trainers import ListTrainer
 # --------- Variables Declaration and Initialization -----------
 chatbot_name = 'Jarvis'
 
-conversation = [
-    "Hello",
-    "Hi there!",
-    "How are you doing?",
-    "I'm doing great.",
-    "That is good to hear",
-    "Thank you.",
-    "You're welcome."
-]
+# conversation = [
+#     "Hello",
+#     "Hi there!",
+#     "How are you doing?",
+#     "I'm doing great.",
+#     "That is good to hear",
+#     "Thank you.",
+#     "You're welcome."
+# ]
 
+conversation =  my_function()
 # --------------------------------------------------------------
 
 
