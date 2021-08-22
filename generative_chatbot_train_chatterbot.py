@@ -34,6 +34,7 @@ path_1 = 'D:\F-H_Collaboration\cornell movie-dialogs corpus\movie_conversations.
 path_2 = 'D:\F-H_Collaboration\cornell movie-dialogs corpus\movie_lines.txt'
 
 conversation =  my_function(path_1,path_2)
+# print (conversation)
 # --------------------------------------------------------------
 
 

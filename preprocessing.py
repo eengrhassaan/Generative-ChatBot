@@ -41,7 +41,7 @@ def my_function(path_1,path_2):
         for conv in convs: 
             conv_dialog.append(dialog_dict[conv])
     
-    convs_dialogs.append(conv_dialog)
+        convs_dialogs.append(conv_dialog)
    
     # Returning required list
     return convs_dialogs
